@@ -2,7 +2,7 @@ from finance_track import app
 from flask import render_template, session
 
 
-@app.route('/')
+@app.route('')
 def index():
     if 'role' in session:
         session.pop('role', None)
