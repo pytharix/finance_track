@@ -1,7 +1,7 @@
-from finance_track import app
+from finance_track import apps
 import socket
 
 host = socket.gethostbyname(socket.gethostname())
 
 if __name__ == "__main__":
-    app.run(host=host, port=5000, debug=True)
+    apps.run(host=host, port=5000, debug=True)
